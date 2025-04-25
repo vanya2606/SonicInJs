@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактировать событие</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Редактировать событие</h1>
+    <form id="editEventForm">
+        <input type="text" id="editEventName" placeholder="Название" required>
+        <input type="date" id="editEventDate" required>
+        <select id="editEventCategory">
+            <option value="Личное">Личное</option>
+            <option value="Рабочее">Рабочее</option>
+            <option value="Общественное">Общественное</option>
+        </select>
+        <textarea id="editEventDescription" placeholder="Описание"></textarea>
+        <button type="submit">Сохранить изменения</button>
+        <button id="deleteEventBtn">Удалить событие</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
